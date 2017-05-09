@@ -6,5 +6,7 @@ class Director < ApplicationRecord
   # - dob: no rules
   # - bio: no rules
   # - image_url: no rules
-  
+
+  has_many(:movies, class_name: "Movie", foreign_key: "id")
+
 end
