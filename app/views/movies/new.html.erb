@@ -71,8 +71,12 @@
 
       <!-- ...for select(database to loop, how to sort, what field to display, default value) -->
       <%= select_tag(:director_id, options_from_collection_for_select(Director.all, :id, :name, @movie.director_id), class: "form-control") %>
-
       </div>
+
+      <h1>
+        Add a New Director
+        <a href="/directors/new" class="btn btn-lg btn-success">New Director</a>
+      </h1>
 
       <button class="btn btn-success">
         Create Movie
